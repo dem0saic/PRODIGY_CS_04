@@ -13,19 +13,20 @@ A basic keylogger program that records and logs keystrokes.
 - Creator Information
 
 # Features
-- Logs all key presses and releases to a file (keylog.txt)
+- Logs all key presses and releases to a file (`keylog.txt`)
 - Stops logging when the 'ESC' key is pressed
 - Stops logging after 5 days of inactivity
 
 # Installation
 To use this keylogger, you will need to install the following libraries:
 
-- pyfiglet
-- termcolor
-- pynput
-- logging
-- threading
-- time
+- `pyfiglet`
+- `termcolor`
+- `pynput`
+- `logging`
+- `threading`
+- `time`
+
 You can install these libraries using pip:
 
 bash
@@ -36,12 +37,12 @@ pip install pyfiglet termcolor pynput
 # Usage
 1. Run the keylogger program.
 2. Press any key to start logging.
-3. The keylogger will log all key presses and releases to keylog.txt.
+3. The keylogger will log all key presses and releases to `keylog.txt`.
 4. Press the 'ESC' key to stop the keylogger.
 5. The keylogger will also stop after 5 days of inactivity.
 
 # Configuration
-The keylogger logs all key presses and releases to keylog.txt. You can change the log file by modifying the filename parameter in the logging.basicConfig function.
+The keylogger logs all key presses and releases to `keylog.txt`. You can change the log file by modifying the filename parameter in the `logging.basicConfig` function.
 
 # Security Considerations
 Please note that this keylogger is for educational purposes only.
