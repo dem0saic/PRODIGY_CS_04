@@ -1,24 +1,57 @@
 ## PRODIGY_CS_04
  Create a basic keylogger program that records and logs keystrokes. Focus on logging the keys pressed and saving them to a file. Note: Ethical considerations and permissions are crucial for projects involving keyloggers.
 
-# Explanation of the Code:
-Imports:
+# Simple Keylogger
+A basic keylogger program that records and logs keystrokes.
 
-pynput.keyboard is used to listen to keyboard events.
-logging is used to log the keystrokes into a file.
+# Table of Contents
+- Features
+- Installation
+- Usage
+- Configuration
+- Security Considerations
+- Creator Information
 
-# Logging Configuration:
-The basicConfig function sets up logging, specifying the filename (keylog.txt), the logging level (DEBUG), and the log message format.
-Key Press Function:
+# Features
+- Logs all key presses and releases to a file (keylog.txt)
+- Stops logging when the 'ESC' key is pressed
+- Stops logging after 5 days of inactivity
 
-on_press(key) logs the character of the key pressed. If it’s a special key (like Shift, Ctrl, etc.), it logs the key name instead.
-Key Release Function:
+# Installation
+To use this keylogger, you will need to install the following libraries:
 
-on_release(key) checks if the Escape key is pressed, which stops the listener.
-Listener:
+- pyfiglet
+- termcolor
+- pynput
+- logging
+- threading
+- time
+You can install these libraries using pip:
 
-The keyboard.Listener collects keyboard events and runs until the Escape key is pressed.
+bash
+```
+pip install pyfiglet termcolor pynput
+```
 
-# Important Considerations:
-Permissions: Always obtain permission from users before logging keystrokes.
-Ethical Use: Use this knowledge responsibly and only for ethical purposes, such as developing security software or educational projects.
+# Usage
+1. Run the keylogger program.
+2. Press any key to start logging.
+3. The keylogger will log all key presses and releases to keylog.txt.
+4. Press the 'ESC' key to stop the keylogger.
+5. The keylogger will also stop after 5 days of inactivity.
+
+# Configuration
+The keylogger logs all key presses and releases to keylog.txt. You can change the log file by modifying the filename parameter in the logging.basicConfig function.
+
+# Security Considerations
+Please note that this keylogger is for educational purposes only.
+
+- Always obtain permission from users before logging keystrokes.
+- Use this knowledge responsibly and only for ethical purposes, such as developing security software or educational projects.
+
+# Creator Information
+Created by: Dem0saic
+GitHub: https://github.com/dem0saic
+LinkedIn: https://www.linkedin.com/in/owusuvincent/
+License
+This keylogger is licensed under the MIT License. See LICENSE for details.
